@@ -1,5 +1,7 @@
+
 import { useRef, useState } from "react";
 import TextHeart from "./components/TextHeart";
+
 
 function App() {
   const [showLetter, setShowLetter] = useState(false);
@@ -33,7 +35,7 @@ function App() {
           ref={audioRef}
           src="/sweet-boy.mp3"
           loop
-          autoPlay
+          preload="auto"
         />
 
         <div className="letter-glow" />
@@ -50,10 +52,10 @@ function App() {
             <p>hi nickkkkkkk,</p>
 
             <p>
-              i wanna tell u something na medyo matagal ko
-              nang gustong sabihin, kahit ilang days pa lang
-              tayo magkakilala and nag-uusap. honestly, ang
-              funny isipin how someone can enter your life so
+              i wanna tell u something na medyo matagal ko nang
+              gustong sabihin, kahit ilang days pa lang tayo
+              magkakilala and nag-uusap. honestly, ang funny
+              isipin how someone can enter your life so
               unexpectedly and somehow, in such a short amount
               of time, already make a small space for themselves
               in your thoughts.
@@ -215,8 +217,7 @@ function App() {
             </p>
 
             <div className="signature">
-              — from someone who's slowly becoming fond of
-              you ♡
+              — from someone who's slowly becoming fond of you ♡
             </div>
           </div>
 
